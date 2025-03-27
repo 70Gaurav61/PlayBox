@@ -1,0 +1,145 @@
+body{
+    background-color : wheat;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    /* her my photo was not fitting the container */
+    min-height: 60vh;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 5px;
+
+    background-image: url('background.png');
+    background-size: cover;
+}
+
+nav{
+    font-family: 'Times New Roman', serif;
+}
+
+h1{
+    color: white;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding: 0 10px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+}
+
+.brand img{
+    height: 50px;
+    padding: 0 5px;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    height: 100px;
+    background-color: darkblue;
+    color: white;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.icons img{
+    width: 20px;
+    padding: 5px;
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songitem{
+    height: 40px;
+    display: flex;
+    background-color: antiquewhite;
+    color: black;
+    justify-content: space-between;
+    align-items: center; /* after applying this img overflow from .songitem */
+    font-size: small;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.songitemcontainer{
+    max-height: 50vh;
+    overflow-y:auto;
+    scrollbar-width: none;
+}
+
+.songitem img{
+    height:40px;
+    cursor: pointer;
+}
+
+.songlistplay{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.songlistplay img{
+    margin: 0 0 0 5px;
+    width: 15px;
+}
+
+.songBanner{
+    background-color: red;
+    z-index: 2;
+}
+
+.songinfo{
+    display: flex;
+    align-items:start;
+    justify-content: space-between;
+    margin-top: 5px;
+    position: absolute;
+    left: 10%;
+}
+
+.songinfo img{
+    height: 15px;
+    padding-right: 5px;
+    transition: opacity 0.6s ease-in;
+    opacity: 0;
+}
+
+.bottom img{
+    cursor: pointer;
+}
